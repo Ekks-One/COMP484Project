@@ -1,0 +1,109 @@
+body{
+    font-family: 'Minecraft';
+    background-image : url('images/stoneBlock.jpg');
+    background-size: 50px 50px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    background-image : url('images/dirtBlock.jpeg');
+    background-size: 50px 50px;
+    height: 80px;
+}
+
+main{
+    padding: 30px;
+}
+
+h1{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    margin: auto;
+    display: table;
+    background-image : url('images/grassBlock.jpg');
+    background-size: 50px;
+}
+
+h2,h3,h4,h5,h6{
+    color: white;
+    font-weight: bold;
+    margin: 30px auto;
+    background-image : url('images/dirtBlock.jpeg');
+    background-size: 50px;
+    display: table;
+    padding: 30px;
+
+}
+
+@font-face{
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.ttf') format('truetype');
+}
+
+.logo{
+    height: 60px;
+    width: 500px;
+    padding: 10px 20px;
+    float: left;
+}
+
+.navLinks{
+    padding: 25px 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navLinks:hover{
+    color: black;
+}
+
+.navBar{
+    display: flex;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+audio{
+    margin: 20px;
+}
+
+.paragraph{
+    display: table;
+    background-image: url('images/oakplanks.png');
+    padding: 30px;
+    margin: 10px auto;
+    background-size: 25px 25px;
+    font-size: 25px;
+    max-width: 800px;
+    line-height: 1.6;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+
+.herobrine{
+    background-image: url('images/steve.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    display: block;
+}
+
+.herobrine:hover{
+    background-image: url('images/herobrine.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border: none;
+    display: block;
+}
