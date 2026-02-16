@@ -35,8 +35,8 @@ h2,h3,h4,h5,h6{
     background-image : url('images/dirtBlock.jpeg');
     background-size: 50px;
     display: table;
-    padding: 30px;
-
+    padding: 20px;
+    font-size: 35px;
 }
 
 @font-face{
@@ -83,11 +83,12 @@ audio{
     padding: 30px;
     margin: 10px auto;
     background-size: 25px 25px;
-    font-size: 25px;
+    font-size: 23px;
     max-width: 800px;
     line-height: 1.6;
-    background-color: rgba(0,0,0,0.3);
     border-radius: 6px;
+    border-color: black;
+    border-style: solid;
 }
 
 .herobrine{
