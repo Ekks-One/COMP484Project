@@ -44,6 +44,13 @@ h2,h3,h4,h5,h6{
     src: url('fonts/Minecraft.ttf') format('truetype');
 }
 
+.subcaption{
+    padding: 10px;
+    display: table;
+    margin: auto;
+    background-image: url(images/diamond.jpg);
+    background-size: 20px;
+}
 .logo{
     height: 60px;
     width: 500px;

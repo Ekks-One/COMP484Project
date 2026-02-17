@@ -26,7 +26,7 @@
             <p class=paragraph>
                 <img src="images/valorant.png" style="padding: 20px; float: left">
                 <b>Valorant</b><br> is a 5v5 tactical FPS game, where you have to defuse a spike (bomb) or defend it after planting. Players choose unique agents with special abilities, and the game emphasizes teamwork, strategy, and precise gunplay.
-                <div style="color: red">
+                <div class= subcaption style="color: red">
                     <b><u>Agents I Play: </u></b> Omen and Jett
                 </div>
             </p>
@@ -37,7 +37,7 @@
             <p class=paragraph>
                 <img src="images/League of Legends.svg" height="100px" style="padding: 20px; float: left">
                 <b>League of Legends</b><br> is a 5v5 multiplayer online battle arena (MOBA) game where two teams compete to destroy the enemy Nexus. Players choose unique champions with distinct abilities, and the game focuses on strategy, teamwork, and map control to secure objectives and win.
-                <div style="color: red">
+                <div class= subcaption style="color: red">
                     I one trick Singed
                 </div>
             </p>
@@ -51,7 +51,7 @@
                 <b>Origami Angel</b> <br>is a midwest emo band, that I've been listening to since COVID and I really like their music. 
                 It's always a goto band I listen to when having late study sessions.
                 
-                <div style="color: red">
+                <div class= subcaption style="color: red">
                     <b><u>Some Favorite Songs:</u></b> The Title Track, Skeleton Key, 24 Hr Drive-Thru
                 </div>
             </p>
@@ -64,7 +64,7 @@
                 <img src="images/grentPerez.png" style="padding: 10px; float:left">
                 <b>Grent Perez</b><br>
                 is a Filipino indie artist who I like his music and really vibe with. He's known for his popular songs: <i><u>Cherry Wine</u></i>, <i><u>Clementine</u></i> and many more 
-                <div style="color: red">
+                <div class= subcaption style="color: red">
                     <b><u>Some Favorite Songs:</u></b> Silver Lining, My Heart It Beats for You
                 </div>
             </p>
@@ -100,15 +100,20 @@
                         <input type="radio" name="q2" value="moba">
                         MOBA
                     </label>
-                    <p class=question>3&rpar; Herobrine is…</p>
+                    <p class=question>3&rpar; What agent do I play?</p>
                     <label>
-                        <input type="radio" name="q3" value="myth" required>
-                        A Minecraft myth
+                        <input type="radio" name="q3" value="herobrine" required>
+                        Herobrine
                     </label>
                     <br>
                     <label>
-                        <input type="radio" name="q3" value="agent">
-                        A Valorant agent
+                        <input type="radio" name="q3" value="omen">
+                        Omen
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="viper">
+                        Viper
                     </label>
                     <br>
                     <button type="submit">Submit Quiz</button>
@@ -124,7 +129,7 @@
                     const answers = {
                         q1: "minecraft",
                         q2: "fps",
-                        q3: "myth"
+                        q3: "omen"
                     };
 
                     let score = 0;
