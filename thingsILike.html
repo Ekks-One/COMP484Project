@@ -14,13 +14,141 @@
             <nav class=navBar>
                 <a class=navLinks href="xavierLore.html">Xavier Minecraft Lore</a>
                 <a class=navLinks href="thingsILike.html">Things I Like</a>
-                <a class=navLinks href="gallery.html">Gallery of images</a>
             </nav>
         </header>
         <main>
             <h1>
                 Things I Like
             </h1>
+            <h2>Games</h2>
+
+            <!-- Valorant-->
+            <p class=paragraph>
+                <img src="images/valorant.png" style="padding: 20px; float: left">
+                <b>Valorant</b><br> is a 5v5 tactical FPS game, where you have to defuse a spike (bomb) or defend it after planting. Players choose unique agents with special abilities, and the game emphasizes teamwork, strategy, and precise gunplay.
+                <div style="color: red">
+                    <b><u>Agents I Play: </u></b> Omen and Jett
+                </div>
+            </p>
+            <img src="images/omen2.jpg" height="293px">
+            <img src="images/jett.png">
+
+            <!-- League of Legends-->
+            <p class=paragraph>
+                <img src="images/League of Legends.svg" height="100px" style="padding: 20px; float: left">
+                <b>League of Legends</b><br> is a 5v5 multiplayer online battle arena (MOBA) game where two teams compete to destroy the enemy Nexus. Players choose unique champions with distinct abilities, and the game focuses on strategy, teamwork, and map control to secure objectives and win.
+                <div style="color: red">
+                    I one trick Singed
+                </div>
+            </p>
+            <img src="images/Singed.jpg" height="300px">
+
+            <h2>Music</h2>
+
+            <!-- Origami Angel -->
+            <p class=paragraph>
+                <img src="images/origamiAngel.png" height="250px" style="padding: 5px; float:left">
+                <b>Origami Angel</b> <br>is a midwest emo band, that I've been listening to since COVID and I really like their music. 
+                It's always a goto band I listen to when having late study sessions.
+                
+                <div style="color: red">
+                    <b><u>Some Favorite Songs:</u></b> The Title Track, Skeleton Key, 24 Hr Drive-Thru
+                </div>
+            </p>
+            <img src="images/SomewhereCity.png" height="200px">
+            <img src="images/gamigang.JPG" height="200px">
+            <img src="images/Origami_Angel_-_Feeling_Not_Found.png" height="200px">
+            
+            <!-- Grent Perez -->
+            <p class=paragraph>
+                <img src="images/grentPerez.png" style="padding: 10px; float:left">
+                <b>Grent Perez</b><br>
+                is a Filipino indie artist who I like his music and really vibe with. He's known for his popular songs: <i><u>Cherry Wine</u></i>, <i><u>Clementine</u></i> and many more 
+                <div style="color: red">
+                    <b><u>Some Favorite Songs:</u></b> Silver Lining, My Heart It Beats for You
+                </div>
+            </p>
+            <img src="images/Backflips_in_a_Restaurant_by_grentperez.png" height="250px">
+            <img src="images/WhenWeWereYounger.jpg" height="250px">
+
+            <!-- Quiz -->
+            <h2>QUIZ</h2>
+
+            <!-- Used form to make a quiz with action attribute to reroute to another page-->
+            <form action="quiz.html" method="get">
+                <div class="paragraph">
+                    <legend>Xavier Quiz</legend>
+
+                    <p class=question>1&rpar; Which game is most nostalgic for me?</p>
+                    <label>
+                        <input type="radio" name="q1" value="minecraft" required>
+                        Minecraft
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="valorant">
+                        Valorant
+                    </label>
+
+                    <p class=question>2&rpar; What type of game is Valorant?</p>
+                    <label>
+                        <input type="radio" name="q2" value="fps" required>
+                        Tactical FPS
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="moba">
+                        MOBA
+                    </label>
+                    <p class=question>3&rpar; Herobrine is…</p>
+                    <label>
+                        <input type="radio" name="q3" value="myth" required>
+                        A Minecraft myth
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="agent">
+                        A Valorant agent
+                    </label>
+                    <br>
+                    <button type="submit">Submit Quiz</button>
+                </div>
+            </form>
+
+
+            <script>
+                const form = document.querySelector("form");
+
+                form.addEventListener("submit", function (e) {
+
+                    const answers = {
+                        q1: "minecraft",
+                        q2: "fps",
+                        q3: "myth"
+                    };
+
+                    let score = 0;
+
+                    const formData = new FormData(form);
+
+                    for (const key in answers) {
+                        if (formData.get(key) === answers[key]) {
+                            score++;
+                        }
+                    }
+
+                    
+                    if(score != 3) {
+                        e.preventDefault();
+                        alert(`You got ${score}/3 correct! TRY AGAIN`);
+                    }
+                    else {
+                        alert(`Achievement Unlocked! SECRET PAGE`);
+                    }
+                    
+                });
+            </script>
+
         </main>
     </body>
 </html>
